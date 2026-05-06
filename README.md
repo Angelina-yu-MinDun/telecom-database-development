@@ -93,9 +93,3 @@ telecom-database-development/
 - [`docs/data_dictionary.md`](docs/data_dictionary.md): Table and column definitions
 - [`docs/assumptions.md`](docs/assumptions.md): Synthetic data generation assumptions
 - [`docs/validation_summary.md`](docs/validation_summary.md): Dataset scale and relationship validation summary
-
-## Notes on Public Version
-
-This repository is a cleaned portfolio version. It excludes the original coursework report and presentation video. The public version focuses on reusable technical assets: schema, queries, documentation, ERD, and synthetic data assets.
-
-The project was originally completed as a group academic assignment. This repository highlights the database design, data generation logic, SQL analysis, and portfolio presentation work relevant to data analytics and data management roles.
