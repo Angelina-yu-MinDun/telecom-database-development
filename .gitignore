@@ -12,8 +12,7 @@
 *.pptx
 *.docx
 
-# Full datasets should stay private unless intentionally reviewed
-data/full/
+# Raw working files should stay private unless intentionally reviewed
 data/raw/
 
 # Python and notebook cache
