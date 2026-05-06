@@ -31,7 +31,7 @@ The full delivered dataset contains:
 - Support requests: 2,940 records
 - Customer service representatives: 15 records
 
-The complete synthetic CSV dataset is prepared in the local portfolio version under `data/full/`. The data is synthetic and was generated for educational and portfolio demonstration purposes.
+The complete synthetic CSV dataset is included in `data/full/`. The data is synthetic and was generated for educational and portfolio demonstration purposes.
 
 ## Database Entities
 
@@ -68,21 +68,27 @@ The SQL analysis focuses on questions relevant to telecom operations:
 ## Repository Structure
 
 ```text
-telecom-database-development/
-  README.md
-  data/
-    full/
-      *.csv
-  docs/
-    assumptions.md
-    data_dictionary.md
-    erd.md
-    validation_summary.md
-  sql/
-    schema.sql
-    insight_queries.sql
-  visuals/
-    dashboard_screenshots/
+.
+├── data/
+│   └── full/
+│       ├── csr_table.csv
+│       ├── customers.csv
+│       ├── payments.csv
+│       ├── phone.csv
+│       ├── plans.csv
+│       ├── subscriptions.csv
+│       └── support_requests.csv
+├── docs/
+│   ├── assumptions.md
+│   ├── data_dictionary.md
+│   ├── erd.md
+│   └── validation_summary.md
+├── sql/
+│   ├── insight_queries.sql
+│   └── schema.sql
+├── visuals/
+│   └── dashboard_screenshots/
+└── README.md
 ```
 
 ## Files
@@ -93,3 +99,10 @@ telecom-database-development/
 - [`docs/data_dictionary.md`](docs/data_dictionary.md): Table and column definitions
 - [`docs/assumptions.md`](docs/assumptions.md): Synthetic data generation assumptions
 - [`docs/validation_summary.md`](docs/validation_summary.md): Dataset scale and relationship validation summary
+- [`data/full`](data/full): Complete synthetic CSV dataset
+
+## Notes on Public Version
+
+This repository is a cleaned portfolio version. It excludes the original coursework report and presentation video. The public version focuses on reusable technical assets: schema, queries, documentation, ERD, and the complete synthetic CSV dataset.
+
+The project was originally completed as a group academic assignment. This repository highlights the database design, data generation logic, SQL analysis, and portfolio presentation work relevant to data analytics and data management roles.
