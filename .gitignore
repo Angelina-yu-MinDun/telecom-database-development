@@ -1,0 +1,27 @@
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Large or private project assets
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.pdf
+*.pptx
+*.docx
+
+# Full datasets should stay private unless intentionally reviewed
+data/full/
+data/raw/
+
+# Python and notebook cache
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
