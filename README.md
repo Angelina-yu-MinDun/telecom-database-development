@@ -31,7 +31,7 @@ The full delivered dataset contains:
 - Support requests: 2,940 records
 - Customer service representatives: 15 records
 
-Only small sample CSV files are included in this public portfolio version. The data is synthetic and was generated for educational and portfolio demonstration purposes.
+The complete synthetic CSV dataset is included in `data/full/`. The data is synthetic and was generated for educational and portfolio demonstration purposes.
 
 ## Database Entities
 
@@ -42,6 +42,10 @@ Only small sample CSV files are included in this public portfolio version. The d
 - `payments`: Payment transactions linked to subscriptions
 - `support_requests`: Customer support interactions and resolution timing
 - `customer_service_rep`: CSR profile and employment type
+
+## ERD
+
+The database relationship model is documented in [`docs/erd.md`](docs/erd.md), using Mermaid so it can be viewed directly on GitHub.
 
 ## Business Questions Answered
 
@@ -67,11 +71,12 @@ The SQL analysis focuses on questions relevant to telecom operations:
 telecom-database-development/
   README.md
   data/
-    sample/
-      *_sample.csv
+    full/
+      *.csv
   docs/
     assumptions.md
     data_dictionary.md
+    erd.md
     validation_summary.md
   sql/
     schema.sql
@@ -84,13 +89,14 @@ telecom-database-development/
 
 - [`sql/schema.sql`](sql/schema.sql): Clean SQLite DDL for the relational schema
 - [`sql/insight_queries.sql`](sql/insight_queries.sql): SQL queries for the main business questions
+- [`docs/erd.md`](docs/erd.md): Entity relationship diagram in Mermaid format
 - [`docs/data_dictionary.md`](docs/data_dictionary.md): Table and column definitions
 - [`docs/assumptions.md`](docs/assumptions.md): Synthetic data generation assumptions
 - [`docs/validation_summary.md`](docs/validation_summary.md): Dataset scale and relationship validation summary
-- [`data/sample`](data/sample): Small public sample of the synthetic CSV tables
+- [`data/full`](data/full): Complete synthetic CSV dataset
 
 ## Notes on Public Version
 
-This repository is a cleaned portfolio version. It excludes the original coursework report, presentation video, and full dataset. The public version focuses on reusable technical assets: schema, queries, documentation, and sample data.
+This repository is a cleaned portfolio version. It excludes the original coursework report and presentation video. The public version focuses on reusable technical assets: schema, queries, documentation, ERD, and the complete synthetic CSV dataset.
 
 The project was originally completed as a group academic assignment. This repository highlights the database design, data generation logic, SQL analysis, and portfolio presentation work relevant to data analytics and data management roles.
