@@ -100,9 +100,3 @@ The SQL analysis focuses on questions relevant to telecom operations:
 - [`docs/assumptions.md`](docs/assumptions.md): Synthetic data generation assumptions
 - [`docs/validation_summary.md`](docs/validation_summary.md): Dataset scale and relationship validation summary
 - [`data/full`](data/full): Complete synthetic CSV dataset
-
-## Notes on Public Version
-
-This repository is a cleaned portfolio version. It excludes the original coursework report and presentation video. The public version focuses on reusable technical assets: schema, queries, documentation, ERD, and the complete synthetic CSV dataset.
-
-The project was originally completed as a group academic assignment. This repository highlights the database design, data generation logic, SQL analysis, and portfolio presentation work relevant to data analytics and data management roles.
