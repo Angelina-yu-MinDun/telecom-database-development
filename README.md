@@ -45,7 +45,7 @@ The complete synthetic CSV dataset is included in `data/full/`. The data is synt
 
 ## ERD
 
-The database relationship model is documented in [`docs/erd.md`](docs/erd.md), using Mermaid so it can be viewed directly on GitHub.
+The database relationship model is documented in [`docs/ERD.md`](docs/ERD.md), using Mermaid so it can be viewed directly on GitHub.
 
 ## Business Questions Answered
 
