@@ -57,7 +57,3 @@ Average support resolution time:
 | Billing & Payments | 12.30 |
 | Security & Fraud | 25.54 |
 | Technical Support | 88.10 |
-
-## Portfolio Interpretation
-
-The validation checks support the portfolio claim that the project was not only a data generation task. The dataset was designed with relational consistency, business rules, and analytical use cases in mind.
