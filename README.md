@@ -17,7 +17,6 @@ The goal was to design a realistic relational database from business assumptions
 - Synthetic data generation with business rules
 - SQL querying for business insights
 - Data validation and referential integrity checks
-- Portfolio-ready data storytelling
 
 ## Dataset Scope
 
@@ -31,7 +30,7 @@ The full delivered dataset contains:
 - Support requests: 2,940 records
 - Customer service representatives: 15 records
 
-The complete synthetic CSV dataset is included in `data/full/`. The data is synthetic and was generated for educational and portfolio demonstration purposes.
+The complete synthetic CSV dataset is included in `data/full/`. The data is synthetic.
 
 ## Database Entities
 
@@ -43,9 +42,6 @@ The complete synthetic CSV dataset is included in `data/full/`. The data is synt
 - `support_requests`: Customer support interactions and resolution timing
 - `customer_service_rep`: CSR profile and employment type
 
-## ERD
-
-The database relationship model is documented in [`docs/ERD.md`](docs/ERD.md), using Mermaid so it can be viewed directly on GitHub.
 
 ## Business Questions Answered
 
@@ -81,13 +77,11 @@ The SQL analysis focuses on questions relevant to telecom operations:
 ├── docs/
 │   ├── assumptions.md
 │   ├── data_dictionary.md
-│   ├── erd.md
+│   ├── ERD.md
 │   └── validation_summary.md
 ├── sql/
 │   ├── insight_queries.sql
 │   └── schema.sql
-├── visuals/
-│   └── dashboard_screenshots/
 └── README.md
 ```
 
@@ -99,4 +93,4 @@ The SQL analysis focuses on questions relevant to telecom operations:
 - [`docs/data_dictionary.md`](docs/data_dictionary.md): Table and column definitions
 - [`docs/assumptions.md`](docs/assumptions.md): Synthetic data generation assumptions
 - [`docs/validation_summary.md`](docs/validation_summary.md): Dataset scale and relationship validation summary
-- [`data/full`](data/full): Complete synthetic CSV dataset
+- [`data`](data): Complete synthetic CSV dataset
