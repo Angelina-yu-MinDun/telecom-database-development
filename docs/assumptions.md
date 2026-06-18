@@ -54,7 +54,3 @@ The plan catalogue contains six plans:
   - Technical support cases usually take longest.
 - Part-time CSRs are more likely to handle general inquiry and account-management requests.
 - Full-time CSRs are more likely to handle technical, billing, security, and fraud-related requests.
-
-## Public Portfolio Limitation
-
-This public version includes sample data only. The full dataset, original coursework report, and presentation video are excluded from the repository to keep the GitHub version focused, reusable, and suitable for portfolio review.
