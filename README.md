@@ -95,7 +95,7 @@ The SQL analysis focuses on questions relevant to telecom operations:
 
 - [`sql/schema.sql`](sql/schema.sql): Clean SQLite DDL for the relational schema
 - [`sql/insight_queries.sql`](sql/insight_queries.sql): SQL queries for the main business questions
-- [`docs/erd.md`](docs/erd.md): Entity relationship diagram in Mermaid format
+- [`docs/ERD.md`](docs/ERD.md): Entity relationship diagram in Mermaid format
 - [`docs/data_dictionary.md`](docs/data_dictionary.md): Table and column definitions
 - [`docs/assumptions.md`](docs/assumptions.md): Synthetic data generation assumptions
 - [`docs/validation_summary.md`](docs/validation_summary.md): Dataset scale and relationship validation summary
