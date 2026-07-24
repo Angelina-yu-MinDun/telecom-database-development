@@ -17,6 +17,7 @@ The goal was to design a realistic relational database from business assumptions
 - Synthetic data generation with business rules
 - SQL querying for business insights
 - Data validation and referential integrity checks
+- Power BI dashboard development
 
 ## Dataset Scope
 
@@ -30,7 +31,14 @@ The full delivered dataset contains:
 - Support requests: 2,940 records
 - Customer service representatives: 15 records
 
-The complete synthetic CSV dataset is included in `data/full/`. The data is synthetic.
+The complete synthetic CSV dataset is included in [`data/`](data/). The data is synthetic.
+
+## Power BI Dashboard
+
+An interactive Power BI dashboard was developed to present the main customer, subscription, revenue, and support-service insights from this project.
+
+- [View the interactive Power BI report](https://app.powerbi.com/view?r=eyJrIjoiY2NiNTM0NmQtMmIzMi00MDhkLWE4YWMtYzg2ZWZjMDhlOTdhIiwidCI6ImFjMGUxYjNmLTQ3NmEtNGM1MC05ZTdkLTcyMmI0ODMyYjk5MSJ9)
+- [`powerbi/Telecom Dashboard.pbix`](powerbi/Telecom%20Dashboard.pbix): Power BI report file
 
 ## Database Entities
 
@@ -66,19 +74,20 @@ The SQL analysis focuses on questions relevant to telecom operations:
 ```text
 .
 ├── data/
-│   └── full/
-│       ├── csr_table.csv
-│       ├── customers.csv
-│       ├── payments.csv
-│       ├── phone.csv
-│       ├── plans.csv
-│       ├── subscriptions.csv
-│       └── support_requests.csv
+│   ├── csr_table.csv
+│   ├── customers.csv
+│   ├── payments.csv
+│   ├── phone.csv
+│   ├── plans.csv
+│   ├── subscriptions.csv
+│   └── support_requests.csv
 ├── docs/
 │   ├── assumptions.md
 │   ├── data_dictionary.md
 │   ├── ERD.md
 │   └── validation_summary.md
+├── powerbi/
+│   └── Telecom Dashboard.pbix
 ├── sql/
 │   ├── insight_queries.sql
 │   └── schema.sql
@@ -94,3 +103,4 @@ The SQL analysis focuses on questions relevant to telecom operations:
 - [`docs/assumptions.md`](docs/assumptions.md): Synthetic data generation assumptions
 - [`docs/validation_summary.md`](docs/validation_summary.md): Dataset scale and relationship validation summary
 - [`data`](data): Complete synthetic CSV dataset
+- [`powerbi/Telecom Dashboard.pbix`](powerbi/Telecom%20Dashboard.pbix): Power BI dashboard file
