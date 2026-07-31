@@ -1,6 +1,6 @@
 # Telecom Database Development
 
-End-to-end relational database and analytics project for **VitaSignal**, a synthetic UK telecommunications provider. The project covers business requirement framing, ERD-based schema design, synthetic operational data generation, SQLite implementation, SQL analysis, and business reporting.
+End-to-end relational database and analytics project for **VitaSignal**, a synthetic UK telecommunications provider. The project covers business requirement framing, ERD-based schema design, synthetic operational data generation, PostgreSQL schema design, analytical SQL modeling, and Power BI dashboard development.
 
 ## Project Overview
 
@@ -13,7 +13,7 @@ The goal was to design a realistic relational database from business assumptions
 - Relational database design
 - Entity relationship modeling
 - Normalization to 3NF
-- SQLite schema implementation
+- PostgreSQL schema design and implementation
 - Synthetic data generation with business rules
 - SQL querying for business insights
 - Data validation and referential integrity checks
@@ -89,15 +89,31 @@ The SQL analysis focuses on questions relevant to telecom operations:
 ├── powerbi/
 │   └── Telecom Dashboard.pbix
 ├── sql/
-│   ├── insight_queries.sql
-│   └── schema.sql
+│   ├── 01. database schemas table preparation.sql
+│   ├── 02. validation_queries.sql
+│   ├── 03. analytics_dimensions_analytics.sql
+│   ├── 04.01 analytics_fact_support_analytics/
+│   │   ├── 01_fact_support_request.sql
+│   │   ├── 02_fact_customer_support_impact.sql
+│   │   ├── 03_customer_request_summary.sql
+│   │   └── 04_phone_subscription_summary.sql
+│   ├── 04.02_analytics_fact_subscription_analytics/
+│   │   ├── 01_fact_subscription_payment.sql
+│   │   └── 02_fact_subscription_outcome.sql
+│   ├── Star Schema Description.md
+│   └── Star Schema Description_EN.md
 └── README.md
 ```
 
 ## Files
 
-- [`sql/schema.sql`](sql/schema.sql): Clean SQLite DDL for the relational schema
-- [`sql/insight_queries.sql`](sql/insight_queries.sql): SQL queries for the main business questions
+- [`sql/01. database schemas table preparation.sql`](sql/01.%20database%20schemas%20table%20preparation.sql): PostgreSQL database, schema, and raw table definitions
+- [`sql/02. validation_queries.sql`](sql/02.%20validation_queries.sql): Data quality, relationship, and business-rule validation queries
+- [`sql/03. analytics_dimensions_analytics.sql`](sql/03.%20analytics_dimensions_analytics.sql): Analytical dimension views for BI reporting
+- [`sql/04.01 analytics_fact_support_analytics/`](sql/04.01%20analytics_fact_support_analytics): Support-service analytical fact views
+- [`sql/04.02_analytics_fact_subscription_analytics/`](sql/04.02_analytics_fact_subscription_analytics): Subscription, payment, and outcome analytical fact views
+- [`sql/Star Schema Description_EN.md`](sql/Star%20Schema%20Description_EN.md): English star schema documentation
+- [`sql/Star Schema Description.md`](sql/Star%20Schema%20Description.md): Chinese star schema documentation
 - [`docs/ERD.md`](docs/ERD.md): Entity relationship diagram in Mermaid format
 - [`docs/data_dictionary.md`](docs/data_dictionary.md): Table and column definitions
 - [`docs/assumptions.md`](docs/assumptions.md): Synthetic data generation assumptions
